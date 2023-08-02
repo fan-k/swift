@@ -72,7 +72,7 @@ print(toys.sorted())
 toys.remove(at: 0)
 
 
-//使用mutating 修改结构体的值 
+//使用mutating 修改结构体的值
 struct Person {
     var name: String
 
