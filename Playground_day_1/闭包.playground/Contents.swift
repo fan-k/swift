@@ -39,6 +39,7 @@ travel {
     print("ssss")
 }
 */
+/*
 /**缩写函数参数*/
 //接收一个参数
 func travel(action :(String) -> String){
@@ -67,3 +68,14 @@ travel { place in
 travel {
     "I'm going to \($0) in my car"
 }
+ 
+ */
+
+//闭包作为函数返回
+func travel() ->(String) -> Void{
+    return {
+        print("I'm going to \($0)")
+    }
+}
+let result = travel()
+result("sss")
