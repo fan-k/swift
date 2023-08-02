@@ -31,6 +31,9 @@ struct Progress {
         didSet {
             print("\(task) is now \(amount)% complete")
         }
+        willSet{
+            print("\(task) is next \(amount)% complete")
+        }
     }
 }
 var progress = Progress(task: "Loading data", amount: 0)
