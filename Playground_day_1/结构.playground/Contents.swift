@@ -53,3 +53,20 @@ struct City{
 
 let london = City(population: 9_000_000)
 london.collectTaxes()
+
+
+
+//字符串 数组也是结构体
+let string = "Do or do not, there is no try."
+print(string.count)
+print(string.hasPrefix("Do"))
+print(string.uppercased())
+print(string.sorted())
+
+
+var toys = ["Woody"]
+print(toys.count)
+toys.append("Buzz")
+toys.firstIndex(of: "Buzz")
+print(toys.sorted())
+toys.remove(at: 0)
