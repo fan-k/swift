@@ -70,3 +70,15 @@ toys.append("Buzz")
 toys.firstIndex(of: "Buzz")
 print(toys.sorted())
 toys.remove(at: 0)
+
+
+//使用mutating 修改结构体的值 
+struct Person {
+    var name: String
+
+    mutating func makeAnonymous() {
+        name = "Anonymous"
+    }
+}
+var person = Person(name: "Ed")
+person.makeAnonymous()
